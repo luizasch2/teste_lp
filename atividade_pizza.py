@@ -2,9 +2,13 @@
 Dicionarios com quantidade ja estabelecidos
 """
 
+massa = {}
+molho = {}
+queijo = {}
+cobertura = {}
 
 
-def montar(dic1: dict, dic2: dict,dict3:dict, dict4: dict) -> dict:
+def montar(dic1: dict, dic2: dict,dict3:dict, dict4: dict) -> tuple:
     """Montar a pizza e calcular o valor
 
     :param dic1: dicionario com a massa e quantidade
@@ -15,10 +19,9 @@ def montar(dic1: dict, dic2: dict,dict3:dict, dict4: dict) -> dict:
     :type dict3: dict
     :param dict4: dicionario com o cobertura e quantidade
     :type dict4: dict
-    :return: pizza montada
-    :rtype: dict
+    :return: pizza montada e preço
+    :rtype: tuple
     """
-
 
 def cadastrar(tipo: str,nome:str,preco: float) -> dict: 
     """cadastra mais um ingrediente no respectivo dicionário
@@ -52,3 +55,4 @@ def listar(tipo:str) -> dict:
     :return: dicionario com tudo listado
     :rtype: dict
     """    
+   
